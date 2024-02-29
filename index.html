@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Melanie Boncaro, ISTE.252 - Web App, 3/5/2024 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Ten Trails in Rochester, NY</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <script src="top_trails.js"></script>
+
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1>Top Ten Trails</h1>
+                <h2>in Rochester, NY</h2>
+                <p>Discover some of the most popular trails of the Greater Rochester area.</p>
+            </div>
+            <div class="view_options">
+                <span class="material-symbols-outlined view_all" onclick="location.href='index.html'">
+                    grid_view
+                </span>
+                <span class="material-symbols-outlined view_favorites" onclick="showFavorites()">
+                    favorite
+                </span>
+            </div>
+        </div>
+        <div id="card_holder" class="card_holder"></div>
+    </div>
+    
+</body>
+</html>

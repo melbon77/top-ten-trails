@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Corbett's Glen Nature Park",
+        "location": "Brighton, NY",
+        "address": "125 Glen Rd Rochester, NY 14610",
+        "difficulty": "Easy",
+        "length": "2.1 mi",
+        "hours": "8:00 AM - 10:00 PM"
+    },
+    {
+        "id": 2,
+        "name": "Channing H. Philbrick Park",
+        "location": "Penfield, NY",
+        "address": "1 Linear Park Dr Penfield, NY 14526",
+        "difficulty": "Easy",
+        "length": "2.5 mi",
+        "hours": "6:00 AM - 10:00 PM"
+    },
+    {
+        "id": 3,
+        "name": "Turning Point Park",
+        "location": "Rochester, NY",
+        "address": "260 Boxart St Rochester, NY 14612",
+        "difficulty": "Moderate",
+        "length": "5.2 mi",
+        "hours": "9:00 AM - 9:00 PM"
+    },
+    {
+        "id": 4,
+        "name": "Lehigh Valley Trail",
+        "location": "Victor NY, Henrietta NY",
+        "address": "Everywhere",
+        "difficulty": "Moderate",
+        "length": "0-30 mi",
+        "hours": "Anytime, preferrably daytime"
+    },
+    {
+        "id": 5,
+        "name": "Webster Arboretum",
+        "location": "Webster, NY",
+        "address": "1700 Schlegel Rd, Webster, NY 14580",
+        "difficulty": "Easy",
+        "length": "0.6 mi",
+        "hours": "8:00 AM - 9:00 PM"
+    },
+    {
+        "id": 6,
+        "name": "Tinker Nature Park",
+        "location": "Pittsford, NY",
+        "address": "1525 Calkins Rd Pittsford, NY 14534",
+        "difficulty": "Easy",
+        "length": "1.2 mi",
+        "hours": "7:00 AM - 8:00 PM"
+    }
+]
