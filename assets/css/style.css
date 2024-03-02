@@ -12,7 +12,8 @@ body {
 } */
 
 .material-symbols-outlined {
-    transition: 150ms ease;
+    transition: font-variation-settings 150ms ease;
+    transition: transform 300ms ease;
     cursor: pointer;
 }
 
@@ -88,28 +89,78 @@ body {
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-}
+    justify-content: space-between;
 
-.card {
-    border: 1px black solid;
-    border-radius: 4px;
-    padding: 8px 16px
 }
 
 .card h3 {
     margin-block: 8px;
 }
-.card p {
+/* .card p {
     margin-block: 8px;
+} */
+
+.card {
+    flex-grow: 1;
+    height: fit-content;
+    border: 1px black solid;
+    border-radius: 4px;
+    padding: 8px 16px;
 }
+
+.card .trail_details {
+    display: none;
+}
+
+.card.open .trail_details{
+    display: block;
+}
+
+.card.open .dropdown {
+    transform: rotate(180deg);
+}
+
+.tLocation {
+    margin-block: 0 4px;
+    font-size: 0.95em;
+    color: #898989;
+}
+.tAddress {
+    margin-block: 0;
+    font-size: 0.95em;
+}
+.tDiff {
+    color: #24a3ec;
+}
+
+.tHours {
+    background-color: #ddddddae;
+    width: fit-content;
+    padding: 2px 4px;
+}
+
 
 /* Larger Screens */
 @media screen and (min-width: 600px) {
     .container {
         max-width: 800px;
-        /* margin: auto; */
     }
+
     .card_holder {
         flex-direction: row;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .card_header {
+        justify-content: start;
+    }
+}
+
+@media screen and (min-width: 824px) {
+    .container {
+        margin-inline: auto;
     }
 }

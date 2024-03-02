@@ -5,8 +5,9 @@
         "location": "Brighton, NY",
         "address": "125 Glen Rd Rochester, NY 14610",
         "difficulty": "Easy",
-        "length": "2.1 mi",
-        "hours": "8:00 AM - 10:00 PM"
+        "distance": "2.1 mi",
+        "hours": "8:00 AM - 10:00 PM",
+        "description": "A quiet walk through a tunnel and along a stream."
     },
     {
         "id": 2,
@@ -14,8 +15,9 @@
         "location": "Penfield, NY",
         "address": "1 Linear Park Dr Penfield, NY 14526",
         "difficulty": "Easy",
-        "length": "2.5 mi",
-        "hours": "6:00 AM - 10:00 PM"
+        "distance": "2.5 mi",
+        "hours": "6:00 AM - 10:00 PM",
+        "description": "A fairly flat trail following a stream."
     },
     {
         "id": 3,
@@ -23,17 +25,19 @@
         "location": "Rochester, NY",
         "address": "260 Boxart St Rochester, NY 14612",
         "difficulty": "Moderate",
-        "length": "5.2 mi",
-        "hours": "9:00 AM - 9:00 PM"
+        "distance": "5.2 mi",
+        "hours": "9:00 AM - 9:00 PM",
+        "description": "Path following the Genesee River north to Lake Ontario."
     },
     {
         "id": 4,
         "name": "Lehigh Valley Trail",
         "location": "Victor NY, Henrietta NY",
-        "address": "Everywhere",
+        "address": "Expansive",
         "difficulty": "Moderate",
-        "length": "0-30 mi",
-        "hours": "Anytime, preferrably daytime"
+        "distance": "0-32.6 mi",
+        "hours": "Anytime, preferrably daytime",
+        "description": "Choose your own adventure; this trail spans quite far. Begin anywhere and travel as far as you desire."
     },
     {
         "id": 5,
@@ -41,8 +45,10 @@
         "location": "Webster, NY",
         "address": "1700 Schlegel Rd, Webster, NY 14580",
         "difficulty": "Easy",
-        "length": "0.6 mi",
-        "hours": "8:00 AM - 9:00 PM"
+        "distance": "0.6 mi",
+        "hours": "8:00 AM - 9:00 PM",
+        "description": "A popular location for photos in the summertime."
+
     },
     {
         "id": 6,
@@ -50,7 +56,48 @@
         "location": "Pittsford, NY",
         "address": "1525 Calkins Rd Pittsford, NY 14534",
         "difficulty": "Easy",
-        "length": "1.2 mi",
-        "hours": "7:00 AM - 8:00 PM"
+        "distance": "1.2 mi",
+        "hours": "7:00 AM - 8:00 PM",
+        "description": "Short, easy trail that loops and passes a pond."
+    },
+    {
+        "id": 7,
+        "name": "Lock 32 Canal Park",
+        "location": "Pittsford, NY",
+        "address": "Erie Canal Heritage Trl Pittsford, NY 14534",
+        "difficulty": "Easy",
+        "distance": "Varies",
+        "hours": "Anytime, preferrably daytime",
+        "description": "Pass an still operational lock as you walk along the canal."
+    },
+    {
+        "id": 8,
+        "name": "Mendon Ponds County Park",
+        "location": "Honeoye Falls, NY",
+        "address": "95 Douglas Rd, Honeoye Falls, NY 14472",
+        "difficulty": "Easy - Moderate",
+        "distance": "1.1 mi",
+        "hours": "6:00 AM - 11:00 PM",
+        "description": "A popular location with a variety of trails to explore."
+    },
+    {
+        "id": 9,
+        "name": "Cobbs Hill Park",
+        "location": "Rochester, NY",
+        "address": "1550 Highland Ave Rochester, NY 14610",
+        "difficulty": "Moderate",
+        "distance": "1.6 mi",
+        "hours": "6:00 AM - 9:00 PM",
+        "description": "Circle the reservoir in Rochester."
+    },
+    {
+        "id": 10,
+        "name": "Genesee Riverway Trail",
+        "location": "Rochester, NY",
+        "address": "Ford Street And Mt Hope Rochester, NY 14620",
+        "difficulty": "Easy",
+        "distance": "6.9 mi",
+        "hours": "Anytime, preferrably daytime",
+        "description": "Travel along the Genesee river on a well-maintained path toward downtown Rochester."
     }
 ]

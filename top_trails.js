@@ -6,17 +6,16 @@
 
 const xhr = new XMLHttpRequest();
 const url = "assets/data/trails.json";
-let output = "";
 
 xhr.open("GET", url, true);
 xhr.send();
 
 xhr.addEventListener("load", function() {
+    let output = "";
     if (xhr.readyState == 4 && xhr.status == 200) {
         // console.log(this.response);
         const Trails = JSON.parse(xhr.response);
         // console.log(Trails);
-
 
         for (let trail of Trails) {
             // console.log(trail);
@@ -40,7 +39,18 @@ function createTrailCard(trail) {
                 favorite
             </span>
         </div>
-        <p>${trail.location}</p>
+        <p class="tLocation">${trail.location}</p>
+
+        <div class="trail_details">
+            <p class="tDiff">${trail.difficulty} &#xb7; ${trail.distance}</p>
+            <p class="tAddress">${trail.address}</p>
+            <p class="tHours"><b>Hours: </b>${trail.hours}</p>
+            <p class="tDesc">${trail.description}</p>
+        </div>
+
+        <span class="material-symbols-outlined dropdown" onclick="showDetails(this)">
+            expand_more
+        </span>
     </div>
     `
 }
@@ -55,8 +65,6 @@ function addElement(data) {
     holder.insertAdjacentHTML("beforeend", data);
 }
 
-
-function showFavorites() {}
 
 function manageFavorite(trailCard) {
     console.log("TrailCard ID: " + trailCard.id);
@@ -76,4 +84,26 @@ function manageFavorite(trailCard) {
     console.log(localStorage.getItem(favTrail));
 
     // return false;
+}
+
+async function showFavorites() {
+    console.log("Show favorites");
+    // let output = "";
+    await requestFavorites()
+    .then(data => output=data.data.map(createTrailCard))
+    .then(output => addElement(output));
+}
+
+async function requestFavorites() {}
+
+
+
+function showDetails(trail) {
+    console.log(trail.parentElement.className);
+
+    if (trail.parentElement.className.includes("open")) {
+        trail.parentElement.className = "card";
+    } else {
+        trail.parentElement.className += " open";
+    }
 }
