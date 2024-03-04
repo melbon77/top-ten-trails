@@ -94,12 +94,16 @@ function manageFavorite(trailCard) {
     // return false;
 }
 
-async function changeDisplay() {
+// async function changeDisplay() {
+//     let output = "";
+//     await requestFavorites()
+//     .then(data => output=data.data.map(createTrailCard))
+//     .then(output => addElement(output));
+// }
+
+
+function changeDisplay() {
     console.log(sessionStorage.getItem("display"));
-    // let output = "";
-    // await requestFavorites()
-    // .then(data => output=data.data.map(createTrailCard))
-    // .then(output => addElement(output));
 
     if (!sessionStorage.getItem("display") || sessionStorage.getItem("display") == "all") {
         sessionStorage.setItem("display", "favorites");
@@ -111,9 +115,6 @@ async function changeDisplay() {
 
     document.location.href='index.html';
 }
-
-async function requestFavorites() {}
-
 
 
 function showDetails(trail) {
