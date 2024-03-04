@@ -19,7 +19,14 @@ xhr.addEventListener("load", function() {
 
         for (let trail of Trails) {
             // console.log(trail);
-            output += createTrailCard(trail);
+            if (!sessionStorage.getItem("display") || sessionStorage.getItem("display") == "all") {
+                output += createTrailCard(trail);
+            } else if (sessionStorage.getItem("display") == "favorites") {
+                if (localStorage.getItem("trail_" + trail.id + "_fav") == "true") {
+                    output += createTrailCard(trail);
+                    console.log(output);
+                }
+            }
         }
         addElement(output);
     }
@@ -33,9 +40,10 @@ function createTrailCard(trail) {
 
     return `
     <div class="card">
+        <img src="${trail.img}">
         <div class="card_header">
             <h3>${trail.name}</h3>
-            <span id="trail_${trail.id}" class="${className}" onclick="manageFavorite(this)">
+            <span title="Add to favorites" id="trail_${trail.id}" class="${className}" onclick="manageFavorite(this)">
                 favorite
             </span>
         </div>
@@ -86,12 +94,22 @@ function manageFavorite(trailCard) {
     // return false;
 }
 
-async function showFavorites() {
-    console.log("Show favorites");
+async function changeDisplay() {
+    console.log(sessionStorage.getItem("display"));
     // let output = "";
-    await requestFavorites()
-    .then(data => output=data.data.map(createTrailCard))
-    .then(output => addElement(output));
+    // await requestFavorites()
+    // .then(data => output=data.data.map(createTrailCard))
+    // .then(output => addElement(output));
+
+    if (!sessionStorage.getItem("display") || sessionStorage.getItem("display") == "all") {
+        sessionStorage.setItem("display", "favorites");
+        console.log("swapped to favorites " + sessionStorage.getItem("display"));
+    } else {
+        sessionStorage.setItem("display", "all");
+        console.log("swapped to all " + sessionStorage.getItem("display"));
+    }
+
+    document.location.href='index.html';
 }
 
 async function requestFavorites() {}
