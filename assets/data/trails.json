@@ -8,7 +8,8 @@
         "distance": "2.1 mi",
         "hours": "8:00 AM - 10:00 PM",
         "description": "A quiet walk through a tunnel and along a stream.",
-        "img": "assets/images/corbetts_glen.jpg"
+        "img": "assets/images/corbetts_glen.jpg",
+        "smallimg": "assets/images/corbetts_glen_small.jpg"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "distance": "2.5 mi",
         "hours": "6:00 AM - 10:00 PM",
         "description": "A fairly flat trail following a stream.",
-        "img": "assets/images/channing_philbrick.jpg"
+        "img": "assets/images/channing_philbrick.jpg",
+        "smallimg": "assets/images/channing_philbrick_small.jpg"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "distance": "5.2 mi",
         "hours": "9:00 AM - 9:00 PM",
         "description": "Path following the Genesee River north to Lake Ontario.",
-        "img": "assets/images/turning_point.jpg"
+        "img": "assets/images/turning_point.jpg",
+        "smallimg": "assets/images/turning_point_small.jpg"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "distance": "0-32.6 mi",
         "hours": "Anytime, preferrably daytime",
         "description": "Choose your own adventure; this trail spans quite far. Begin anywhere and travel as far as you desire.",
-        "img": "assets/images/lehigh_valley.webp"
+        "img": "assets/images/lehigh_valley.webp",
+        "smallimg": "assets/images/lehigh_valley.webp"
     },
     {
         "id": 5,
@@ -52,8 +56,8 @@
         "distance": "0.6 mi",
         "hours": "8:00 AM - 9:00 PM",
         "description": "A popular location for photos in the summertime.",
-        "img": "assets/images/webster_arbor.jpg"
-
+        "img": "assets/images/webster_arbor.jpg",
+        "smallimg": "assets/images/webster_arbor_small.jpg"
     },
     {
         "id": 6,
@@ -64,7 +68,8 @@
         "distance": "1.2 mi",
         "hours": "7:00 AM - 8:00 PM",
         "description": "Short, easy trail that loops and passes a pond.",
-        "img": "assets/images/tinker.jpg"
+        "img": "assets/images/tinker.jpg",
+        "smallimg": "assets/images/tinker_small.jpg"
     },
     {
         "id": 7,
@@ -75,7 +80,8 @@
         "distance": "Varies",
         "hours": "Anytime, preferrably daytime",
         "description": "Pass an still operational lock as you walk along the canal.",
-        "img": "assets/images/lock_32.webp"
+        "img": "assets/images/lock_32.webp",
+        "smallimg": "assets/images/lock_32.webp"
     },
     {
         "id": 8,
@@ -86,7 +92,8 @@
         "distance": "1.1 mi",
         "hours": "6:00 AM - 11:00 PM",
         "description": "A popular location with a variety of trails to explore.",
-        "img": "assets/images/mendon_ponds.jpg"
+        "img": "assets/images/mendon_ponds.jpg",
+        "smallimg": "assets/images/mendon_ponds_small.jpg"
     },
     {
         "id": 9,
@@ -97,7 +104,8 @@
         "distance": "1.6 mi",
         "hours": "6:00 AM - 9:00 PM",
         "description": "Circle the reservoir in Rochester.",
-        "img": "assets/images/cobbs_hill.jpg"
+        "img": "assets/images/cobbs_hill.jpg",
+        "smallimg": "assets/images/cobbs_hill_small.jpg"
     },
     {
         "id": 10,
@@ -108,6 +116,7 @@
         "distance": "6.9 mi",
         "hours": "Anytime, preferrably daytime",
         "description": "Travel along the Genesee river on a well-maintained path toward downtown Rochester.",
-        "img": "assets/images/genesee_riverway.jpg"
+        "img": "assets/images/genesee_riverway.jpg",
+        "smallimg": "assets/images/genesee_riverway_small.jpg"
     }
 ]

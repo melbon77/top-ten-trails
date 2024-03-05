@@ -18,7 +18,7 @@ xhr.addEventListener("load", function() {
         // console.log(Trails);
 
         for (let trail of Trails) {
-            // console.log(trail);
+            // Check if display mode is favorites or all, then show appropriate cards
             if (!sessionStorage.getItem("display") || sessionStorage.getItem("display") == "all") {
                 output += createTrailCard(trail);
             } else if (sessionStorage.getItem("display") == "favorites") {
@@ -32,15 +32,27 @@ xhr.addEventListener("load", function() {
     }
 })
 
+/**
+ * Converts a single trail object to an html trail card
+ * @param {*} trail single parsed trail object
+ * @returns template literal of trail card in html
+ */
 function createTrailCard(trail) {
     let className = "material-symbols-outlined favorite";
+
+    // Check item has been favorited previously
     if (localStorage.getItem("trail_" + trail.id + "_fav") == "true") {
         className += " selected";
     }
 
     return `
     <div class="card">
-        <img src="${trail.img}">
+        <img srcset="
+        ${trail.img} 800w,
+        ${trail.smallimg} 600w"
+        sizes="(min-width: 600px)"
+        alt="${trail.name}">
+
         <div class="card_header">
             <h3>${trail.name}</h3>
             <span title="Add to favorites" id="trail_${trail.id}" class="${className}" onclick="manageFavorite(this)">
@@ -67,13 +79,20 @@ function createTrailCard(trail) {
     <a href="#" onclick="return false">favorite</a>
 </span> */}
 
-
+/**
+ * Adds html trail cards to the page to be displayed
+ * @param {string} data string of html card elements
+ */
 function addElement(data) {
     let holder = document.getElementById("card_holder");
     holder.insertAdjacentHTML("beforeend", data);
 }
 
 
+/**
+ * Toggles favorited state of trail card
+ * @param {*} trailCard current trail object
+ */
 function manageFavorite(trailCard) {
     console.log("TrailCard ID: " + trailCard.id);
 
@@ -101,7 +120,9 @@ function manageFavorite(trailCard) {
 //     .then(output => addElement(output));
 // }
 
-
+/**
+ * Toggles between displaying all trails and only favorited trails
+ */
 function changeDisplay() {
     console.log(sessionStorage.getItem("display"));
 
@@ -116,7 +137,10 @@ function changeDisplay() {
     document.location.href='index.html';
 }
 
-
+/**
+ * Toggles additional details displayed on trail card
+ * @param {*} trail single trail object
+ */
 function showDetails(trail) {
     console.log(trail.parentElement.className);
 
